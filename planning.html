@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="用照片與文字記錄倫敦、愛丁堡、愛爾蘭，以及台灣山林裡的旅行故事。">
+  <title>旅行準備｜我的旅行筆記</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <div class="header">
+    <div class="container">
+      <p class="site-title"><a href="index.html">我的旅行筆記</a></p>
+      <p class="tagline">走過城市，也走進山林。記下風景，還有路上遇見的人。</p>
+      <ul class="nav" aria-label="主要導覽">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="overseas.html">海外旅行</a></li>
+        <li><a href="taiwan.html">台灣山行</a></li>
+        <li><a href="planning.html" class="current" aria-current="page">旅行準備</a></li>
+      </ul>
+    </div>
+  </div>
+  <main class="main container">
+    <p class="label">旅行準備 / 實用小技巧</p>
+    <h1>出發準備事項。</h1>
+    <p class="intro">以下提供一些小工具，幫助你更輕鬆地規劃旅行。</p>
+    <div class="table-wrap">
+      <table>
+        <caption>我的旅行回顧表</caption>
+        <thead><tr><th scope="col">地點</th><th scope="col">旅行類型</th><th scope="col">最難忘的事</th><th scope="col">閱讀遊記</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">倫敦</th><td>城市旅行</td><td>西敏寺的歷史與悲慘世界的演出</td><td><a href="overseas.html#london">倫敦篇</a></td></tr>
+          <tr><th scope="row">愛丁堡</th><td>城市散步</td><td>城堡、山丘與迪恩村的流水聲</td><td><a href="overseas.html#edinburgh">愛丁堡篇</a></td></tr>
+          <tr><th scope="row">都柏林</th><td>城市與海邊</td><td>現場音樂與觀眾的投入</td><td><a href="overseas.html#ireland">愛爾蘭篇</a></td></tr>
+          <tr><th scope="row">眠月線</th><td>森林與鐵道</td><td>森林中的舊鐵道和滿天星空</td><td><a href="taiwan.html#sleeping-moon">眠月線篇</a></td></tr>
+          <tr><th scope="row">嘉明湖</th><td>高山行走</td><td>風雨中的山屋，以及和人的緣分</td><td><a href="taiwan.html#jiaming">嘉明湖篇</a></td></tr>
+          <tr><th scope="row">奇萊南華</th><td>高山與星空</td><td>草原、雲海、流星雨與銀河</td><td><a href="taiwan.html#qilai">奇萊南華篇</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>我的準備順序</h2>
+    <ol>
+      <li>先決定目的地、天數，以及最想體驗的事情。</li>
+      <li>查詢交通與住宿；山行另外確認當時的開放公告和申請事項。</li>
+      <li>整理裝備、證件與衣物，依行程列出自己的清單。</li>
+      <li>估算旅費，並為臨時變動保留預算與時間。</li>
+    </ol>
+    <h3>我會先放進背包的東西</h3>
+    <ul><li>證件、交通與住宿資料（我會用小袋子裝好，並且收到貼身衣物內）。</li><li>手機、充電線、行動電源。</li><li>適合行程的衣物、雨具與個人用品。</li><li>山行另列完整裝備清單，再與同行者確認。</li></ul>
+    <div class="panel" id="hiking-checklist">
+      <h2>登山用品勾選清單</h2>
+      <p>先從這 12 項整理自己的背包，準備好一項就勾選一項。這是單日健行的精簡清單，多日、雪季或特殊路線需要另外補上裝備。</p>
+      <form id="gear-checklist" onchange="updateChecklist();">
+        <h3>行走與聯絡</h3>
+        <ul class="gear-list">
+          <li><label><input type="checkbox" name="hiking-gear"> 背包與背包防雨套</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 頭燈與備用電池</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 行動電話與行動電源</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 離線地圖、紙本地圖與指北針</label></li>
+        </ul>
+        <h3>衣物與鞋子</h3>
+        <ul class="gear-list">
+          <li><label><input type="checkbox" name="hiking-gear"> 排汗衣褲與排汗襪</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 保暖衣物</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 兩截式雨衣褲</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 適合路線的登山鞋或健行鞋</label></li>
+        </ul>
+        <h3>補給與隨身用品</h3>
+        <ul class="gear-list">
+          <li><label><input type="checkbox" name="hiking-gear"> 飲用水與水瓶／水袋</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 餐食、行動糧與預備糧</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 垃圾袋</label></li>
+          <li><label><input type="checkbox" name="hiking-gear"> 哨子、急救毯與個人醫藥包</label></li>
+        </ul>
+      </form>
+      <p id="checklist-result" class="result" aria-live="polite">已準備 0 / 12 項，還有 12 項待確認。</p>
+      <button type="button" onclick="resetChecklist();">清除全部勾選</button>
+      <p class="note">勾選紀錄只保留在目前頁面，重新整理或離開頁面後不會儲存。證件及路線需要的申請文件，請另外確認。</p>
+      <noscript><p>仍可勾選用品；即時項目統計與清除按鈕需要開啟 JavaScript。</p></noscript>
+    </div>
+    <div class="panel">
+      <h2>簡單旅費試算</h2>
+      <p>請輸入<strong>一個人的費用，單位皆為新臺幣（NT$）</strong>。海外花費請先自行換算。預設數字僅為計算範例，請改成自己的預算。</p>
+      <p class="note">以「天數 − 1」計算住宿夜數；餐費以天數計算，交通填整趟總額。試算不含門票、裝備及購物。</p>
+      <form onsubmit="calculateBudget(); return false;">
+        <label for="days">旅行天數（1–365 天）</label>
+        <input id="days" name="days" type="number" min="1" max="365" step="1" value="3" required>
+        <label for="room">每人每晚住宿費（NT$）</label>
+        <input id="room" name="room" type="number" min="0" max="100000000" step="0.01" value="1000" required>
+        <label for="food">每人每日餐費（NT$）</label>
+        <input id="food" name="food" type="number" min="0" max="100000000" step="0.01" value="500" required>
+        <label for="transport">每人整趟交通費（NT$）</label>
+        <input id="transport" name="transport" type="number" min="0" max="100000000" step="0.01" value="1200" required>
+        <p><button type="submit">計算旅費</button></p>
+      </form>
+      <p id="budget-result" class="result" aria-live="polite">填好後按「計算旅費」，這裡會顯示估計總額。</p>
+      <noscript><p>試算需要開啟 JavaScript。也可以自行計算：（天數 − 1）× 住宿費 ＋ 天數 × 餐費 ＋ 交通費。</p></noscript>
+    </div>
+    <h2>旅行地點地圖</h2>
+
+    <ul>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=London" target="_blank" rel="noopener noreferrer">倫敦地圖（另開分頁）</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Edinburgh" target="_blank" rel="noopener noreferrer">愛丁堡地圖（另開分頁）</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Dublin" target="_blank" rel="noopener noreferrer">都柏林地圖（另開分頁）</a></li>
+    </ul>
+  </main>
+  <div class="footer">
+    <div class="container">
+      <p>阿端的旅行筆記</p>
+      <p><a href="#top">回到頁首 ↑</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
