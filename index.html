@@ -1,61 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="用照片與文字記錄倫敦、愛丁堡、愛爾蘭，以及台灣山林裡的旅行故事。">
-  <title>首頁｜阿端的旅行筆記</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body id="top">
-  <div class="header">
-    <div class="container">
-      <p class="site-title"><a href="index.html">阿端的旅行筆記</a></p>
-      <p class="tagline">我是個喜歡背一個背包，說走就走的旅行者。</p>
-      <ul class="nav" aria-label="主要導覽">
-        <li><a href="index.html" class="current" aria-current="page">首頁</a></li>
-        <li><a href="overseas.html">海外旅行</a></li>
-        <li><a href="taiwan.html">台灣山行</a></li>
-        <li><a href="planning.html">旅行準備</a></li>
-      </ul>
-    </div>
-  </div>
-  <main class="main container">
-    <p class="label">旅行紀錄 / 六個地方的回憶</p>
-    <h1>把路上的故事，慢慢寫下來。</h1>
-    <p class="intro">有些旅行是說走就走，有些則等了好久才成行。從英國的城市、愛爾蘭的海邊，到台灣的森林和高山，這裡收藏的是我親自走過的地方，以及那些比風景更難忘的小事。</p>
-    <h2>從這裡開始讀</h2>
-    <!-- 兩列、每列兩格：沿用課堂 row / box 的四格版面。 -->
-    <div class="row">
-      <div class="box"><div class="card">
-        <img src="assets/edinburgh/491461487_18304597978235697_2333785492834021801_n.jpg" alt="愛丁堡城堡座落在岩石山丘上" width="1440" height="1440">
-        <h3>01 / 海外旅行</h3>
-        <p>倫敦的第一陣冷風、愛丁堡的安靜角落，以及都柏林的現場音樂。</p>
-        <a href="overseas.html">閱讀海外遊記 →</a>
-      </div></div>
-      <div class="box"><div class="card">
-        <img src="assets/奇萊南華/772171116_18368890492235697_7278529809511290449_n.jpg" alt="陽光照在奇萊南華的高山草原上" width="1440" height="1440">
-        <h3>02 / 台灣山行</h3>
-        <p>眠月線的森林、嘉明湖的風雨，還有奇萊南華的草原與星空。</p>
-        <a href="taiwan.html">閱讀山行故事 →</a>
-      </div></div>
-    </div>
-    <div class="row">
-      <div class="box"><div class="card">
-        <h3>03 / 最想記住的片段</h3>
-        <ul>
-          <li><a href="overseas.html#ireland">在都柏林，跟著陌生人一起聽音樂。</a></li>
-          <li><a href="taiwan.html#jiaming">在嘉明湖，用幾罐飲料串起緣分。</a></li>
-          <li><a href="taiwan.html#sleeping-moon">在眠月線，遇見滿天星星。</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="用照片與文字記錄倫敦、愛丁堡、愛爾蘭，以及台灣山林裡的旅行故事。"
+    />
+    <title>首頁｜阿端的旅行筆記</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="top">
+    <div class="header">
+      <div class="container">
+        <p class="site-title"><a href="index.html">阿端的旅行筆記</a></p>
+        <p class="tagline">我是個喜歡背一個背包，說走就走的旅行者。</p>
+        <ul class="nav" aria-label="主要導覽">
+          <li>
+            <a href="index.html" class="current" aria-current="page">首頁</a>
+          </li>
+          <li><a href="overseas.html">海外旅行</a></li>
+          <li><a href="taiwan.html">台灣山行</a></li>
+          <li><a href="planning.html">旅行準備</a></li>
         </ul>
-      </div></div>
-      <div class="box"><div class="card">
-        <h3>04 / 為下一次出發做準備</h3>
-        <p>整理六個地方讓我留下印象的原因，也留下一份簡單的準備清單和旅費試算。</p>
-        <a href="planning.html">看看旅行準備 →</a>
-      </div></div>
+      </div>
     </div>
-    <div class="panel">
+    <div class="hero">
+      <img
+        src="assets/hero.jpg"
+        alt="藍天與雲海下，陽光灑落在綿延的高山草坡上"
+        width="4000"
+        height="3000"
+        fetchpriority="high"
+      />
+    </div>
+    <main class="main container">
+      <p class="label">旅行紀錄</p>
+      <h1>把路上的故事，慢慢寫下來。</h1>
+      <p class="intro">
+        我是個在旅行方面很說走就走的人，常常揪到人、機票便宜，就背上一個背包出發的人，這裡分享了我在台灣以及國外的旅行故事。
+      </p>
+      <h2>從這裡開始讀</h2>
+      <!-- 兩列、每列兩格：沿用課堂 row / box 的四格版面。 -->
+      <div class="row">
+        <div class="box">
+          <div class="card">
+            <img
+              src="assets/edinburgh/491461487_18304597978235697_2333785492834021801_n.jpg"
+              alt="愛丁堡城堡座落在岩石山丘上"
+              width="1440"
+              height="1440"
+            />
+            <h3>01 / 海外旅行</h3>
+            <p>這裡分享了我到英國做社會服務時順便到訪過的國家</p>
+            <a href="overseas.html">閱讀海外遊記 →</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <img
+              src="assets/奇萊南華/772171116_18368890492235697_7278529809511290449_n.jpg"
+              alt="陽光照在奇萊南華的高山草原上"
+              width="1440"
+              height="1440"
+            />
+            <h3>02 / 台灣山行</h3>
+            <p>我很喜歡爬台灣的山，爬起來很有挑戰力，但是最後的景色卻很舒服</p>
+            <a href="taiwan.html">閱讀山行故事 →</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <div class="card">
+            <h3>03 / 最想記住的片段</h3>
+            <ul>
+              <li>
+                <a href="overseas.html#ireland">都柏林-- 民謠音樂之都</a>
+              </li>
+              <li>
+                <a href="taiwan.html#jiaming">嘉明湖 -- 天使的眼淚</a>
+              </li>
+              <li>
+                <a href="taiwan.html#sleeping-moon"
+                  >眠月線 -- 古木參天 眠於月下。</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="card">
+            <h3>04 / 旅行準備清單</h3>
+            <p>
+              整理每個地方讓我印象深刻的原因，也留下一份簡單的準備清單和旅費試算。
+            </p>
+            <a href="planning.html">旅行準備清單以及試算 →</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="panel">
       <h2>今天想讀哪一種旅行？</h2>
       <p>選一個方向，從一篇遊記開始。</p>
       <button type="button" onclick="chooseTrip('city')">想逛城市</button>
@@ -63,14 +107,14 @@
       <p id="trip-result" class="result" aria-live="polite">還沒決定嗎？點一下上方按鈕，看看我的閱讀建議。</p>
       <a id="trip-link" href="overseas.html">先看看海外旅行 →</a>
       <noscript><p>閱讀建議需要開啟 JavaScript；也可以直接使用上方連結閱讀全部遊記。</p></noscript>
+    </div> -->
+    </main>
+    <div class="footer">
+      <div class="container">
+        <p>我的旅行筆記｜文字與照片來自我的旅程</p>
+        <p><a href="#top">回到頁首 ↑</a></p>
+      </div>
     </div>
-  </main>
-  <div class="footer">
-    <div class="container">
-      <p>我的旅行筆記｜文字與照片來自我的旅程</p>
-      <p><a href="#top">回到頁首 ↑</a></p>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

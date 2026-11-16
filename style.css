@@ -1,77 +1,86 @@
 /* 共用樣式：四個頁面使用同一份 CSS。
-   橄欖綠 #606c38、森林綠 #283618、米黃 #fefae0、
-   焦糖 #dda15e、銅色 #bc6c25。 */
+   Hunter Green #386641、Sage Green #6a994e、Yellow Green #a7c957、
+   Champagne Mist #f2e8cf、Blushed Brick #bc4749；主背景為白色。 */
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  background-color: #fefae0;
-  color: #283618;
+  background-color: #ffffff;
+  color: #386641;
   font-family: "Microsoft JhengHei", "PingFang TC", sans-serif;
   font-size: 17px;
   line-height: 1.9;
 }
-a { color: #606c38; }
-a:hover { color: #283618; }
+a { color: #386641; }
+a:hover { color: #bc4749; }
 a:focus-visible, button:focus-visible, input:focus-visible {
-  outline: 3px solid #bc6c25;
+  outline: 3px solid #bc4749;
   outline-offset: 3px;
 }
-.header { background-color: #283618; border-bottom: 1px solid #dda15e; }
+.header { background-color: #386641; border-bottom: 1px solid #a7c957; }
 .container { width: 92%; max-width: 1040px; margin: 0 auto; }
 .site-title { padding-top: 20px; margin: 0; font-size: 27px; font-weight: bold; }
-.site-title a { color: #fefae0; text-decoration: none; }
-.site-title a:hover { color: #dda15e; }
-.tagline { margin: 0 0 16px; color: #dda15e; font-size: 15px; }
+.site-title a { color: #ffffff; text-decoration: none; }
+.site-title a:hover { color: #a7c957; }
+.tagline { margin: 0 0 16px; color: #f2e8cf; font-size: 15px; }
 /* 清單導覽列，對應課堂 lists / links 範例。 */
 .nav { list-style-type: none; padding: 0; margin: 0; overflow: hidden; }
 .nav li { float: left; }
-.nav a { color: #fefae0; display: block; padding: 10px 22px; text-decoration: none; }
-.nav a:hover, .nav .current { background-color: #606c38; color: #fefae0; }
+.nav a { color: #ffffff; display: block; padding: 10px 22px; text-decoration: none; }
+.nav a:hover, .nav .current { background-color: #a7c957; color: #386641; }
+/* 首頁全幅照片：不受內文容器寬度限制。 */
+.hero { width: 100%; }
+.hero img {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 42vw, 560px);
+  object-fit: cover;
+  object-position: center 55%;
+}
 .main { padding: 30px 0 45px; }
 h1 { margin: 0 0 12px; font-size: 32px; line-height: 1.5; }
 h2 { margin: 28px 0 12px; font-size: 24px; }
 h3 { font-size: 19px; margin: 18px 0 8px; }
 p { margin: 0 0 16px; }
 .intro { max-width: 760px; }
-.label { color: #606c38; font-size: 14px; margin-bottom: 6px; }
+.label { color: #386641; font-size: 14px; margin-bottom: 6px; }
 /* 課堂四格範例：一列放兩個寬度為 50% 的 div。 */
 .row { display: flex; }
 .box { width: 50%; padding: 12px; }
-.card { background-color: #fefae0; border: 1px solid #dda15e; padding: 18px; height: 100%; }
+.card { background-color: #ffffff; border: 1px solid #6a994e; padding: 18px; height: 100%; }
 .card h3 { margin: 12px 0 6px; }
 .card p { margin-bottom: 10px; }
 .card img { display: block; width: 100%; height: auto; }
-.panel { background-color: #fefae0; border: 1px solid #dda15e; padding: 22px; margin: 25px 0; }
+.panel { background-color: #ffffff; border: 1px solid #6a994e; padding: 22px; margin: 25px 0; }
 .panel h2 { margin-top: 0; }
-button { background-color: #606c38; color: #fefae0; border: 1px solid #606c38; padding: 10px 18px; font: inherit; cursor: pointer; margin: 4px 8px 8px 0; }
-button:hover { background-color: #283618; }
-.result { padding: 14px; background-color: #dda15e; border-left: 4px solid #bc6c25; margin: 12px 0; }
-.contents { padding: 14px 20px; border: 1px solid #dda15e; background-color: #fefae0; }
+button { background-color: #386641; color: #ffffff; border: 1px solid #386641; padding: 10px 18px; font: inherit; cursor: pointer; margin: 4px 8px 8px 0; }
+button:hover { background-color: #bc4749; border-color: #bc4749; }
+.result { padding: 14px; background-color: #f2e8cf; border-left: 4px solid #bc4749; margin: 12px 0; }
+.contents { padding: 14px 20px; border: 1px solid #6a994e; background-color: #f2e8cf; }
 .contents a { display: inline-block; margin: 4px 22px 4px 0; }
-.article { background-color: #fefae0; padding: 26px; margin-top: 30px; border: 1px solid #dda15e; }
+.article { background-color: #ffffff; padding: 26px; margin-top: 30px; border: 1px solid #6a994e; }
 .article h2 { margin-top: 0; }
 .photos { display: flex; }
 figure { margin: 0; }
 .photos figure { width: 33.333%; padding: 6px; }
 .photos img { display: block; width: 100%; height: auto; }
-figcaption { font-size: 14px; color: #606c38; margin-top: 6px; }
+figcaption { font-size: 14px; color: #386641; margin-top: 6px; }
 .story { margin-top: 22px; }
-.note { font-size: 15px; color: #606c38; }
+.note { font-size: 15px; color: #386641; }
 .table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; background-color: #fefae0; }
+table { width: 100%; border-collapse: collapse; background-color: #ffffff; }
 caption { text-align: left; font-weight: bold; padding: 12px 0; }
-th, td { border: 1px solid #dda15e; padding: 12px; text-align: left; }
-th { background-color: #dda15e; }
+th, td { border: 1px solid #6a994e; padding: 12px; text-align: left; }
+th { background-color: #f2e8cf; }
 label { display: block; margin: 12px 0 5px; }
-input { width: 100%; max-width: 320px; padding: 9px; border: 1px solid #606c38; background-color: #fefae0; color: #283618; font: inherit; }
+input { width: 100%; max-width: 320px; padding: 9px; border: 1px solid #6a994e; background-color: #ffffff; color: #386641; font: inherit; }
 .gear-list { list-style-type: none; padding: 0; margin: 0; }
-.gear-list li { border-bottom: 1px solid #dda15e; }
+.gear-list li { border-bottom: 1px solid #f2e8cf; }
 .gear-list label { margin: 0; padding: 10px 0; cursor: pointer; }
-.gear-list label:hover { background-color: #dda15e; }
-.gear-list input { accent-color: #606c38; width: 18px; height: 18px; margin: 0 8px 0 0; vertical-align: middle; cursor: pointer; }
-.footer { background-color: #283618; border-top: 1px solid #bc6c25; padding: 20px 0; font-size: 14px; color: #fefae0; }
-.footer a { color: #dda15e; }
-.footer a:hover { color: #fefae0; }
+.gear-list label:hover { background-color: #f2e8cf; }
+.gear-list input { accent-color: #386641; width: 18px; height: 18px; margin: 0 8px 0 0; vertical-align: middle; cursor: pointer; }
+.footer { background-color: #386641; border-top: 1px solid #bc4749; padding: 20px 0; font-size: 14px; color: #ffffff; }
+.footer a { color: #f2e8cf; }
+.footer a:hover { color: #ffffff; }
 .footer p { margin: 0; }
 /* 小螢幕改成直排，讓文字與照片保持好讀。 */
 @media (max-width: 640px) {
