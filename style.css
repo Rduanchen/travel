@@ -82,6 +82,15 @@ input { width: 100%; max-width: 320px; padding: 9px; border: 1px solid #6a994e; 
 .footer a { color: #f2e8cf; }
 .footer a:hover { color: #ffffff; }
 .footer p { margin: 0; }
+/* 滑鼠移入時的小幅提示，只套用在支援 hover 的裝置。 */
+@media (hover: hover) {
+  .card:hover {
+    border-color: #386641;
+    box-shadow: 0 3px 10px rgba(56, 102, 65, 0.12);
+  }
+  .photos img:hover { opacity: 0.9; }
+  tbody tr:hover { background-color: #f2e8cf; }
+}
 /* 小螢幕改成直排，讓文字與照片保持好讀。 */
 @media (max-width: 640px) {
   .row, .photos { display: block; }
